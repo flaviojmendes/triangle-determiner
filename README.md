@@ -1,4 +1,5 @@
 #### Triangle Determiner
+[![Build Status](https://travis-ci.org/flaviojmendes/triangle-determiner.svg?branch=master)](https://travis-ci.org/flaviojmendes/triangle-determiner)
 
 This is a simple application that determines the type of a triangle by its sides length.
 
