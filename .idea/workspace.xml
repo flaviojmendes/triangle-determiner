@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="730f9f93-fec7-41a4-adc4-e86b438ee7d0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/determiner.go" beforeDir="false" afterPath="$PROJECT_DIR$/determiner.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/determiner_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/determiner_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,9 +14,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/triangle_determiner$go_test_triangle_determiner__1_.out" NAME="go test triangle-determiner (1) Coverage Results" MODIFIED="1546898223292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/triangle_determiner$go_test_triangle_determiner__1_.out" NAME="go test triangle-determiner (1) Coverage Results" MODIFIED="1546899393927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/triangle_determiner$TestDetermineTriangleInvalidAmountOfSides_in_triangle_determiner.out" NAME="TestDetermineTriangleInvalidAmountOfSides in triangle-determiner Coverage Results" MODIFIED="1546899110844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/triangle_determiner$TestDetermine_in_triangle_determiner.out" NAME="TestDetermine in triangle-determiner Coverage Results" MODIFIED="1546893756307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/triangle_determiner$go_test_triangle_determiner.out" NAME="go test triangle-determiner Coverage Results" MODIFIED="1546894881751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="354" />
@@ -33,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="120">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
               <folding>
                 <element signature="e#14#37#0" expanded="true" />
               </folding>
@@ -42,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/determiner.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+            <state relative-caret-position="218">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#14#41#0" expanded="true" />
               </folding>
@@ -63,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/determiner_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="71" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
+            <state relative-caret-position="101">
+              <caret line="41" column="61" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
               <folding>
                 <element signature="e#14#80#0" expanded="true" />
               </folding>
@@ -103,8 +109,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/TriangleType.go" />
         <option value="$PROJECT_DIR$/main.go" />
-        <option value="$PROJECT_DIR$/determiner_test.go" />
         <option value="$PROJECT_DIR$/determiner.go" />
+        <option value="$PROJECT_DIR$/determiner_test.go" />
       </list>
     </option>
   </component>
@@ -155,15 +161,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Go Test.go test triangle-determiner (1)">
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="triangle-determiner" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="triangle-determiner" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build triangle-determiner" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="triangle-determiner" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -174,7 +171,7 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="TestDetermine in triangle-determiner" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDetermineTriangleInvalidAmountOfSides in triangle-determiner" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="triangle-determiner" />
       <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
@@ -182,7 +179,7 @@
       <package value="triangle-determiner" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestDetermine$" />
+      <pattern value="^TestDetermineTriangleInvalidAmountOfSides$" />
       <method v="2" />
     </configuration>
     <configuration name="TestDetermineTriangleInvalidSides in triangle-determiner" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -194,6 +191,17 @@
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <pattern value="^TestDetermineTriangleInvalidSides$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestDetermineTriangleWithFourSides in triangle-determiner" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="triangle-determiner" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="triangle-determiner" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestDetermineTriangleWithFourSides$" />
       <method v="2" />
     </configuration>
     <configuration name="go test triangle-determiner (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -219,42 +227,42 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Test.go test triangle-determiner (1)" />
+        <item itemvalue="Go Test.TestDetermineTriangleInvalidAmountOfSides in triangle-determiner" />
+        <item itemvalue="Go Test.TestDetermineTriangleWithFourSides in triangle-determiner" />
         <item itemvalue="Go Test.TestDetermineTriangleInvalidSides in triangle-determiner" />
         <item itemvalue="Go Test.go test triangle-determiner" />
-        <item itemvalue="Go Test.TestDetermine in triangle-determiner" />
-        <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="go_test_triangle-determiner_(1) - 2019.01.07 at 21h 05m 30s.xml">
+    <history-entry file="go_test_triangle-determiner_(1) - 2019.01.07 at 22h 09m 44s.xml">
       <configuration name="go test triangle-determiner (1)" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_triangle-determiner_(1) - 2019.01.07 at 21h 07m 41s.xml">
+    <history-entry file="go_test_triangle-determiner_(1) - 2019.01.07 at 22h 10m 33s.xml">
       <configuration name="go test triangle-determiner (1)" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_triangle-determiner_(1) - 2019.01.07 at 21h 07m 57s.xml">
-      <configuration name="go test triangle-determiner (1)" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDetermineTriangleInvalidAmountOfSides_in_triangle-determiner - 2019.01.07 at 22h 10m 36s.xml">
+      <configuration name="TestDetermineTriangleInvalidAmountOfSides in triangle-determiner" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_triangle-determiner_(1) - 2019.01.07 at 21h 17m 49s.xml">
-      <configuration name="go test triangle-determiner (1)" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDetermineTriangleInvalidAmountOfSides_in_triangle-determiner - 2019.01.07 at 22h 11m 18s.xml">
+      <configuration name="TestDetermineTriangleInvalidAmountOfSides in triangle-determiner" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_triangle-determiner_(1) - 2019.01.07 at 21h 20m 38s.xml">
-      <configuration name="go test triangle-determiner (1)" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDetermineTriangleInvalidAmountOfSides_in_triangle-determiner - 2019.01.07 at 22h 11m 50s.xml">
+      <configuration name="TestDetermineTriangleInvalidAmountOfSides in triangle-determiner" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_triangle-determiner_(1) - 2019.01.07 at 21h 21m 08s.xml">
-      <configuration name="go test triangle-determiner (1)" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDetermineTriangleInvalidAmountOfSides_in_triangle-determiner - 2019.01.07 at 22h 12m 02s.xml">
+      <configuration name="TestDetermineTriangleInvalidAmountOfSides in triangle-determiner" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_triangle-determiner_(1) - 2019.01.07 at 21h 22m 06s.xml">
-      <configuration name="go test triangle-determiner (1)" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDetermineTriangleWithFourSides_in_triangle-determiner - 2019.01.07 at 22h 13m 24s.xml">
+      <configuration name="TestDetermineTriangleWithFourSides in triangle-determiner" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_triangle-determiner_(1) - 2019.01.07 at 21h 22m 54s.xml">
-      <configuration name="go test triangle-determiner (1)" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDetermineTriangleInvalidAmountOfSides_in_triangle-determiner - 2019.01.07 at 22h 13m 58s.xml">
+      <configuration name="TestDetermineTriangleInvalidAmountOfSides in triangle-determiner" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_triangle-determiner_(1) - 2019.01.07 at 21h 55m 16s.xml">
-      <configuration name="go test triangle-determiner (1)" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDetermineTriangleInvalidAmountOfSides_in_triangle-determiner - 2019.01.07 at 22h 14m 46s.xml">
+      <configuration name="TestDetermineTriangleInvalidAmountOfSides in triangle-determiner" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_triangle-determiner_(1) - 2019.01.07 at 21h 57m 05s.xml">
+    <history-entry file="go_test_triangle-determiner_(1) - 2019.01.07 at 22h 16m 22s.xml">
       <configuration name="go test triangle-determiner (1)" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
@@ -262,12 +270,12 @@
     <frame x="0" y="23" width="1440" height="801" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32863188" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32863188" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39915374" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -275,9 +283,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32863188" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32863188" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.3297568" />
+      <window_info active="true" anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.3297568" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -294,13 +302,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/go.sum">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go.mod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file:///usr/local/go/src/runtime/asm_amd64.s">
       <provider selected="true" editor-type-id="text-editor">
@@ -326,6 +327,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/determiner.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#14#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TriangleType.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -335,8 +353,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="120">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding>
             <element signature="e#14#37#0" expanded="true" />
           </folding>
@@ -345,20 +363,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/determiner_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="71" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
+        <state relative-caret-position="101">
+          <caret line="41" column="61" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
           <folding>
             <element signature="e#14#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/determiner.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-          <folding>
-            <element signature="e#14#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

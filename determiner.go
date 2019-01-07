@@ -2,7 +2,6 @@ package main
 
 import (
 	"errors"
-	"log"
 	"strconv"
 )
 
@@ -12,7 +11,7 @@ func determine(givenSides []string) TriangleType {
 	a, b, c, err := parseSides(givenSides)
 
 	if err != nil {
-		log.Panic(err)
+		panic(err.Error())
 	}
 
 	// All sides are different, then it is Scalene
@@ -28,8 +27,9 @@ func determine(givenSides []string) TriangleType {
 }
 
 func parseSides(givenSides []string) (float64,float64,float64, error) {
-	if len(givenSides) != 3 {
-		return 0, 0, 0, errors.New("a Triangle must have 3 sides")
+
+	if givenSides == nil || len(givenSides) != 3 {
+		return 0, 0, 0, errors.New("it is expected an Array with 3 sides of a Triangle")
 	}
 
 	// Parsing the sides to Float64 type
@@ -49,17 +49,17 @@ func parseSides(givenSides []string) (float64,float64,float64, error) {
 
 func hasValidSides(a, b, c float64) (bool, error) {
 	// Checking by the Inequality Theorem that it is a Valid Triangle
-	inequalityError := errors.New("a Triangle must have sides greater than 0")
+	inequalityError := errors.New("the sum of the lengths of any two sides must be greater than or equal to the length of the remaining side")
 
-	if a + b <= c {
+	if a + b < c {
 		return false, inequalityError
 	}
 
-	if b + c <= a {
+	if b + c < a {
 		return false, inequalityError
 	}
 
-	if c + a <= b {
+	if c + a < b {
 		return false, inequalityError
 	}
 
