@@ -8,6 +8,13 @@ env:
     - IMAGE_NAME=flaviojmendes/triangle-determiner
     - GO111MODULE=on
 install: true
+
+script:
+  - go test -race -coverprofile=coverage.txt -covermode=atomic
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
 jobs:
   fast_finish: true
 notifications:
