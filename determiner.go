@@ -29,7 +29,7 @@ func determine(givenSides []string) TriangleType {
 
 func parseSides(givenSides []string) (float64,float64,float64, error) {
 	if len(givenSides) != 3 {
-		return 0, 0, 0, errors.New("A Triangle must have 3 sides")
+		return 0, 0, 0, errors.New("a Triangle must have 3 sides")
 	}
 
 	// Parsing the sides to Float64 type
@@ -49,7 +49,7 @@ func parseSides(givenSides []string) (float64,float64,float64, error) {
 
 func hasValidSides(a, b, c float64) (bool, error) {
 	// Checking by the Inequality Theorem that it is a Valid Triangle
-	inequalityError := errors.New("A Triangle must have sides greater than 0")
+	inequalityError := errors.New("a Triangle must have sides greater than 0")
 
 	if a + b <= c {
 		return false, inequalityError

@@ -26,24 +26,31 @@ func TestDetermineScalene(t *testing.T) {
 
 func TestDetermineTriangleInvalidAmountOfSides(t *testing.T) {
 	convey.Convey("Determine that a Triangle where a=5, b=3 and does not have c", t, func() {
-		convey.ShouldPanicWith(func(){determine([]string{"5","3"})}, "A Triangle must have 3 sides")
+		convey.ShouldPanicWith(func(){determine([]string{"5","3"})}, "a Triangle must have 3 sides")
 	})
 }
 
 func TestDetermineTriangleNegativeC(t *testing.T) {
 	convey.Convey("Determine that a Triangle where a=5, b=3 and c=-1.2", t, func() {
-		convey.ShouldPanicWith(func(){determine([]string{"5","3","-1.2"})}, "A Triangle must have sides greater than 0")
+		convey.ShouldPanicWith(func(){determine([]string{"5","3","-1.2"})}, "a Triangle must have sides greater than 0")
 	})
 }
 
 func TestDetermineTriangleShortAAndB(t *testing.T) {
 	convey.Convey("Determine that a Triangle where a=1, b=1 and c=4", t, func() {
-		convey.ShouldPanicWith(func(){determine([]string{"1","1","4"})}, "A Triangle must have sides greater than 0")
+		convey.ShouldPanicWith(func(){determine([]string{"1","1","4"})}, "a Triangle must have sides greater than 0")
 	})
 }
 
 func TestDetermineTriangleShortAAndC(t *testing.T) {
 	convey.Convey("Determine that a Triangle where a=1, b=68.3 and c=1", t, func() {
-		convey.ShouldPanicWith(func(){determine([]string{"1","68.3","1"})}, "A Triangle must have sides greater than 0")
+		convey.ShouldPanicWith(func(){determine([]string{"1","68.3","1"})}, "a Triangle must have sides greater than 0")
+	})
+}
+
+
+func TestDetermineTriangleWithNotNumericSide(t *testing.T) {
+	convey.Convey("Determine that a Triangle where a=1, b=68.3 and c=invalidValue", t, func() {
+		convey.ShouldPanicWith(func(){determine([]string{"1","68.3","invalidValue"})}, "all sides of a Triangle must be numeric")
 	})
 }
