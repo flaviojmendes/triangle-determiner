@@ -59,4 +59,4 @@ $ docker run -i flaviojmendes/triangle-determiner 3 3 3
 
 ###### References
 
-[Wikipedia - Triangle Inequality]([https://en.wikipedia.org/wiki/Triangle_inequality)
+[Wikipedia - Triangle Inequality](https://en.wikipedia.org/wiki/Triangle_inequality)
