@@ -1,11 +1,11 @@
-#### Triangle Determiner
+### Triangle Determiner
 [![Build Status](https://travis-ci.org/flaviojmendes/triangle-determiner.svg?branch=master)](https://travis-ci.org/flaviojmendes/triangle-determiner)
 [![codecov](https://codecov.io/gh/flaviojmendes/triangle-determiner/branch/master/graph/badge.svg)](https://codecov.io/gh/flaviojmendes/triangle-determiner)
 
 
 This is a simple application that determines the type of a triangle by its sides length.
 
-##### Explanation
+#### Explanation
 
 By Math, according to its sides length a Triangle can be categorized into: 
 
@@ -13,3 +13,25 @@ By Math, according to its sides length a Triangle can be categorized into:
 - **Isosceles:** has two sides of equal length.
 - **Scalene:** has all its sides of different lengths.
 
+#### How to Run?
+
+##### Building on your own
+
+
+
+##### Getting from DockerHub
+
+This project is fully integrated and being deployed at DockerHub.
+So, assuming you have Docker installed, to use it you just have to execute the following:
+```
+$ docker run -i flaviojmendes/triangle-determiner {A} {B} {C}
+
+-- FOR EXAMPLE --
+
+$ docker run -i flaviojmendes/triangle-determiner 3 3 3
+
+-- WILL RETURN --
+
+2019/01/07 21:39:00 The type of the Triangle is Equilateral
+
+```
