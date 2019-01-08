@@ -14,7 +14,7 @@ func TestDetermineEquilateral(t *testing.T) {
 
 func TestDetermineIsosceles(t *testing.T) {
 	convey.Convey("Determine that a Triangle where a=5.1, b=5.1 and c=4 is Isosceles", t, func() {
-		convey.So(determine([]string{"5.1","5.1","10.2"}), convey.ShouldEqual, Isosceles)
+		convey.So(determine([]string{"5.1","5.1","10.1"}), convey.ShouldEqual, Isosceles)
 	})
 }
 

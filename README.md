@@ -17,12 +17,30 @@ By Math, according to its sides length a Triangle can be categorized into:
 
 ##### Building on your own
 
+This project  uses Go modules, therefore it depends on Go 1.11 and newer. 
+Also, it means it doesn't necessarily have to be contained inside your $GOPATH/src folder. 
+Once you've cloned the repo locally, you may run `go mod verify` to make sure all dependencies are present.
 
+After that you should run `go build` and then:
+
+```
+$ ./triangle-determiner {A} {B} {C}
+
+-- FOR EXAMPLE --
+
+$ ./triangle-determiner 3 3 3
+
+-- WILL RETURN --
+
+2019/01/07 21:39:00 The type of the Triangle is Equilateral
+
+```
 
 ##### Getting from DockerHub
 
 This project is fully integrated and being deployed at DockerHub.
 So, assuming you have Docker installed, to use it you just have to execute the following:
+
 ```
 $ docker run -i flaviojmendes/triangle-determiner {A} {B} {C}
 
@@ -35,3 +53,10 @@ $ docker run -i flaviojmendes/triangle-determiner 3 3 3
 2019/01/07 21:39:00 The type of the Triangle is Equilateral
 
 ```
+
+![](assets/example_docker.gif)
+
+
+###### References
+
+[Wikipedia - Triangle Inequality]([https://en.wikipedia.org/wiki/Triangle_inequality)

@@ -2,6 +2,7 @@ package main
 
 import (
 	"errors"
+	"log"
 	"strconv"
 )
 
@@ -11,7 +12,7 @@ func determine(givenSides []string) TriangleType {
 	a, b, c, err := parseSides(givenSides)
 
 	if err != nil {
-		panic(err.Error())
+		log.Panic(err)
 	}
 
 	// All sides are different, then it is Scalene
@@ -51,15 +52,15 @@ func hasValidSides(a, b, c float64) (bool, error) {
 	// Checking by the Inequality Theorem that it is a Valid Triangle
 	inequalityError := errors.New("the sum of the lengths of any two sides must be greater than or equal to the length of the remaining side")
 
-	if a + b < c {
+	if a + b <= c {
 		return false, inequalityError
 	}
 
-	if b + c < a {
+	if b + c <= a {
 		return false, inequalityError
 	}
 
-	if c + a < b {
+	if c + a <= b {
 		return false, inequalityError
 	}
 
