@@ -5,6 +5,9 @@
 *.so
 *.dylib
 
+triangle-determiner
+
+
 # Test binary, build with `go test -c`
 *.test
 
