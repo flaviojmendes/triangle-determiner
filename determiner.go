@@ -42,30 +42,30 @@ func parseSides(givenSides []string) (float64,float64,float64, error) {
 		return 0, 0, 0, errors.New("all sides of a Triangle must be numeric")
 	}
 
-	_,err = hasValidSides(a,b,c)
+	err = validateSides(a,b,c)
 
 	return a,b,c,err
 
 }
 
-func hasValidSides(a, b, c float64) (bool, error) {
+func validateSides(a, b, c float64) error {
 	// Checking by the Inequality Theorem that it is a Valid Triangle
 	inequalityError := errors.New("the sum of the lengths of any two sides must be greater than or equal to the length of the remaining side")
 
 	if a + b <= c {
-		return false, inequalityError
+		return inequalityError
 	}
 
 	if b + c <= a {
-		return false, inequalityError
+		return inequalityError
 	}
 
 	if c + a <= b {
-		return false, inequalityError
+		return inequalityError
 	}
 
 	// If got here it is a valid Triangle!
-	return true, nil
+	return nil
 }
 
 
