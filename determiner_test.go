@@ -31,6 +31,12 @@ func TestDetermineTriangleInvalidAmountOfSides(t *testing.T) {
 }
 
 
+func TestDetermineTriangleInvalidAAndB(t *testing.T) {
+	convey.Convey("Determine that a Triangle where a=a, b=b and c=4", t, func() {
+		convey.So(func(){determine([]string{"a","b","4"})},convey.ShouldPanicWith, "all sides of a Triangle must be numeric")
+	})
+}
+
 func TestDetermineTriangleWithFourSides(t *testing.T) {
 	convey.Convey("Determine that a Triangle where a=5, b=3, c=4 and has an extra side", t, func() {
 		convey.So(func(){determine([]string{"5","3","4","3"})}, convey.ShouldPanicWith, "it is expected an Array with 3 sides of a Triangle")
