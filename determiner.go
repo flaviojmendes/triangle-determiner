@@ -34,15 +34,15 @@ func parseSides(givenSides []string) (float64,float64,float64, error) {
 	}
 
 	// Parsing the sides to Float64 type
-	a,err := strconv.ParseFloat(givenSides[0],64)
-	b,err := strconv.ParseFloat(givenSides[1],64)
-	c,err := strconv.ParseFloat(givenSides[2],64)
+	a,errA := strconv.ParseFloat(givenSides[0],64)
+	b,errB := strconv.ParseFloat(givenSides[1],64)
+	c,errC := strconv.ParseFloat(givenSides[2],64)
 
-	if err != nil {
+	if errA != nil ||  errB != nil || errC != nil {
 		return 0, 0, 0, errors.New("all sides of a Triangle must be numeric")
 	}
 
-	err = validateSides(a,b,c)
+	err := validateSides(a,b,c)
 
 	return a,b,c,err
 
